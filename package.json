@@ -1,0 +1,26 @@
+{
+  "homepage": "http://shwetalwarhade.github.io/Bloggers-Jam",
+  "name": "jam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "shwetal",
+  "license": "ISC",
+  "dependencies": {
+    "deploy": "^1.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
+    "marked": "^12.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.3.1",
+    "nodemon": "^3.1.0",
+    "slugify": "^1.6.6"
+  }
+}
