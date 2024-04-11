@@ -1,10 +1,14 @@
 
+
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const articleRouter = require("./routes/articles");
 const Article = require("./models/article");
 const methodOverride = require("method-override");
+const PORT = process.env.PORT || 3000;
+
+
 
 mongoose
   .connect("mongodb://127.0.0.1:27017/blogArt")
@@ -35,7 +39,7 @@ app.get("/about", function(req, res) {
 
   
 
-app.listen(3000, (req, res) => {
+app.listen(PORT, (req, res) => {
   console.log("runninng on 4000 port");
 });
 
